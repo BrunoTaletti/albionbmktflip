@@ -1,5 +1,7 @@
 function buscarPrecosDasRunas() {
-    const itemsName = "T4_RUNE,T5_RUNE,T6_RUNE,T7_RUNE,T8_RUNE";
+    const runes = "T4_RUNE,T5_RUNE,T6_RUNE,T7_RUNE,T8_RUNE";
+    const souls = "T4_SOUL,T5_SOUL,T6_SOUL,T7_SOUL,T8_SOUL";
+    const itemsName = runes + souls;
     const currentDate = new Date().toJSON().slice(0, 10);
 
     const runeEndpoint = `https://west.albion-online-data.com/api/v2/stats/history/${itemsName}?end_date=${currentDate}&locations=Caerleon&time-scale=6`;
