@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <title>Blackmarket Flipper | Albion Online</title>
+</head>
+<body>
+    <div class="container d-center">
+        <h1>Comparador de Preços Albion Online</h1>
+    <div class="box form-box">
+        <form id="priceComparisonForm">
+            <label for="itemName">Nome do Item:</label>
+            <input type="text" id="itemName" name="itemName" required><br><br>
+    
+            <label for="enchantment">Encantamento:</label>
+            <select id="enchantment" name="enchantment">
+                <option value="">Nenhum</option>
+                <option value="1">.1</option>
+                <option value="2">.2</option>
+                <option value="3">.3</option>
+                <option value="4">.4</option>
+            </select><br><br>
+    
+            <label for="quality">Qualidade:</label>
+            <select id="quality" name="quality">
+                <option value="1">Normal</option>
+                <option value="2">Bom</option>
+                <option value="3">Excelente</option>
+                <option value="4">Incomum</option>
+                <option value="5">Lendário</option>
+            </select><br><br>
+    
+            <input type="submit" class="btn" value="Comparar Preços">
+        </form>
+    </div>
+
+    <div class="prices">
+        <div class="box item-box">
+            <h1>Item</h1>
+            <table id="priceTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qualidade</th>
+                        <th>Cidade</th>
+                        <th>Preço de compra</th>
+                        <th>Preço de venda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="box rune-box">
+            <h1>Runas</h1>
+            <table id="runeTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Cidade</th>
+                        <th>Valor</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./scripts/albion-market-api.js"></script>
+    <script src="./scripts/albion-runas.js"></script>
+</body>
+</html>

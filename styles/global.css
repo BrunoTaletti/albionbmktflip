@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    font-family:sans-serif;
+}
+
+:root{
+    --white: #ffffff;
+    --gray: #fafafa;
+    --black: #000000;
+
+    --red: #ff3939;
+    --green: #c0fe23;
+    --blue: #3dacfb;
+    --yellow: #f9e636;
+}
+
+body{
+    background-color: var(--gray);
+}
+
+form{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+table{
+    text-align: left;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 1%;
+    border: none;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.container{
+    width: 100%;
+    flex-direction: column;   
+}
+
+.d-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prices{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 1%;
+    margin: 1%;
+    background-color: var(--white);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+    box-sizing: content-box;
+}
+
+.form-box{
+    width: 50%;
+}
+
+.item-box{
+    width: 40%;
+}
+
+.rune-box{
+    width: 40%;
+}
+
+.btn{
+    border: none;
+    padding: 1%;
+    margin: 1% 0;
+    font-weight: bold;
+    border-radius: 25px;
+    color: var(--white);
+    background-color: var(--blue);
+}
