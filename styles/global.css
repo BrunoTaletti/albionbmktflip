@@ -18,21 +18,40 @@ body{
     background-color: var(--gray);
 }
 
+h1{
+    text-align: center;
+}
+
 form{
     width: 100%;
     box-sizing: border-box;
 }
 
 table{
+    width: 100%;
     text-align: left;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+tr{
+    align-items: center;
+}
+
+td{
+    margin: 0 1%;
+}
+
+th{
+    width: 0;
 }
 
 input, select{
     width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
     box-sizing: border-box;
     border-radius: 25px;
     padding: 1%;
-    border: none;
     box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -52,6 +71,7 @@ input, select{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -66,15 +86,15 @@ input, select{
 }
 
 .form-box{
-    width: 50%;
+    width: 90%;
 }
 
 .item-box{
-    width: 40%;
+    width: 90%;
 }
 
 .rune-box{
-    width: 40%;
+    width: 90%;
 }
 
 .btn{
@@ -85,4 +105,9 @@ input, select{
     border-radius: 25px;
     color: var(--white);
     background-color: var(--blue);
+}
+
+.item-photo, .rune-photo{
+    width: 100%;
+    margin: 0;
 }
